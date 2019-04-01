@@ -22,6 +22,7 @@ def checkUser(username, password):
         return -1
 
 
+
 def query_allcar():
     allcar = session.query(model.Car.id,model.Car.cname,model.Car.cdetail).all()
     return allcar
