@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		<link rel="stylesheet" type="text/css" href="../static/js/lib/bootstrap-3.3.7-dist/css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="../static/css/index.css"/>
+		<script src="../static/js/lib/jQuery/jquery-2.1.4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/lib/bootstrap-3.3.7-dist/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+		  <div class="container">
+			<p class="navbar-text navbar-right">
+				<a href="#">欢迎：{{user}}</a>&nbsp;
+				<a href="/quit">退出</a>&nbsp;
+			</p>
+		  </div>
+		</nav>
+		
+		<form action="/updateproject/{{id}}" method="post">
+			<div class="panel panel-warning">
+				<div class="panel-heading">
+					<h1>添加名车</h1>
+					
+				</div>
+				<div class="panel-body">
+					项目名称：<input type="text" name="cname" value={{project[0]}}><br><br>
+					<!--项目内容：<input type="text" name="cdetail" value={{project[1]}}><br>-->
+					项目内容：
+					<textarea cols="22" rows="7" name = "cdetail" >{{project[1]}}</textarea>
+				</div>
+				<div class="panel-body">
+					<div class="form-group">
+					 <input type="submit" value="提交" class="btn btn-default" />
+					  <a href="/list" class="btn btn-default">返回</a>
+
+					</div>
+				</div>
+			</div>
+		</form>
+		
+	</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		<link rel="stylesheet" type="text/css" href="../static/js/lib/bootstrap-3.3.7-dist/css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="../static/css/index.css"/>
+		<script src="../static/js/lib/jQuery/jquery-2.1.4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/lib/bootstrap-3.3.7-dist/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+		  <div class="container">
+			<p class="navbar-text navbar-right">
+				<a href="#">欢迎：{{user}}</a>&nbsp;
+				<a href="/quit">退出</a>&nbsp;
+			</p>
+		  </div>
+		</nav>
+		<div class="panel panel-warning">
+			<div class="panel-heading">
+				<h1>名车详情</h1>
+				</div>
+			<div class="panel-body">
+				<p>名车名称：{{project[0]}}</p>
+				<p>名车内容：{{project[1]}}</p>
+			</div>
+			<div class="panel-body">
+				<div class="form-group">
+				 <a href="/updateproject/{{id}}" class="btn btn-default">编辑</a>
+				 <a href="/delproject/{{id}}" class="btn btn-default">删除</a>
+				  <a href="/list" class="btn btn-default">返回</a>
+
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>

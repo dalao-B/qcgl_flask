@@ -1,0 +1,20 @@
+body{
+	padding-top: 200px;
+	background:url(../images/0.jpg) no-repeat;
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	
+}
+.panel{
+	margin: 0 auto;
+	width: 1200px;
+	text-align: center;
+}
+.list-group{
+	width: 1000px;
+	margin: 0 auto;
+}
+.item>img{
+	margin: 0 auto;
+}
